@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <img src="https://classic.exame.com/wp-content/uploads/2021/12/IMG_4418.jpg?quality=70&strip=info&w=1024" alt="">
+
+    <form action="data_form.php" method="POST">
+
+        <h3>Cadastre-se</h3>
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+
+            <input type="text" id="nome" name="nome" placeholder="Nome completo">
+        </div>
+
+
+        <div class="form-group">
+            <label for="data_nascimento">Data de nascimento</label>
+
+            <input type="date" name="data_nascimento" id="data_nascimento">
+        </div>
+
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+
+            <input type="email" name="email" id="email">
+        </div>
+
+
+        <div class="form-group">
+            <label>Habilidades:</label>
+
+
+
+            <label for="html">
+                <input type="checkbox" id="html" name="habilidades[]" value="HTML">HTML
+            </label>
+
+
+
+            <label for="css">
+                <input type="checkbox" id="css" name="habilidades[]" value="CSS">CSS
+            </label>
+
+
+
+            <label for="js">
+                <input type="checkbox" id="js" name="habilidades[]" value="js">JavaScript
+            </label>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="pais">País: </label>
+            <select id="pais" name="pais">
+                <option value="Brasil">Brasil</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="India">Índia</option>
+                <option value="Alemanha">Alemanha</option>
+                <option value="Coreia do Sul">Coreia do Sul</option>
+                <option value="Holanda">Holanda</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Singapura">Singapura</option>
+
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="comentarios">Comentários:</label><br>
+            <textarea id="comentarios" name="comentarios"> </textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
+
